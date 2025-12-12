@@ -16,7 +16,7 @@ import java.util.List;
 
 @FeignClient(
         name = "Filiere-Service",
-        url = "http://localhost:8081/v1/filieres"
+        url = "http://faculty-gateway-service:8888/FILIERE-SERVICE/v1/filieres"
 )
 public interface FiliereClient {
     @CircuitBreaker(name = "filiere",fallbackMethod = "filiere_fallback")
