@@ -17,7 +17,7 @@ spec:                            # Configuration du Deployment.
       containers:           # Kubernetes lance un conteneur avec :
         - name: faculty-config-service      # nom de conteneur dans un pod
           image: faculty_management-faculty-config-service:latest # image de conteneur
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 9999   # port interne de conteneur --> Le conteneur écoute sur le port 871
           env:
